@@ -1,6 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const routes = require('./routes')
 const path = require('path');
 require('dotenv').config();
 
@@ -19,8 +18,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-// routes
-// app.use(routes);
+
 app.use(require("./routes/api-routes"));
 app.use(require("./routes/html-routes"));
 app.use(express.json());
