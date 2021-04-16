@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const path = require('path');
+const path = require('path')
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
@@ -12,19 +12,15 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-console.log(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+mongoose.connect(process.env.URI || "mongodb://localhost/workouts", {
+    useNewUrlParser: true,
+    useFindAndModify: false
 });
 
-
-app.use(require("./routes/api-routes"));
-app.use(require("./routes/html-routes"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+// routes
+app.use(require("./routes/api.js"));
+app.use(require("./routes/html-routes.js"))
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+    console.log(`App running on port ${PORT}!`);
 });
