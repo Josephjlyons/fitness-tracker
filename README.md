@@ -31,12 +31,12 @@ An application that allows the user to input new workouts and complete previous 
 * ***Nodejs***
 * ***noSQL***
 * ***Dotenv***
-* ***mongo***
+* ***Mongo***
 * ***BootStrap*** 
 * ***Express*** 
 * ***JavaScipt***
 * ***CSS***
-* ***HMTL***
+* ***HTML***
 * ***API***
 
 ## Installation
@@ -47,9 +47,9 @@ However if it was needed to run the application locally:
 
 1. Clone the repository on a local machine.
 2. Open the apps directory and run a `npm install` to get all dependencies.
-3. Create an `.env` file that will store your personal credentials. Follow the `.env.EXAMPLE` model to ensure correct key/value pairs for the MONGODB_URI connection strings
+3. Create an `.env` file that will store your personal credentials. Follow the `.env.EXAMPLE` model to ensure correct key/value pairs for the MONGODB_URI connection strings.
 4. In the command line run `npm run start` to get the server up and running, from there navigate to a browser of choice and access the app by going to `localhost:3001`.
-5. If need to seed run `npm run seed`
+5. If need to seed run `npm run seed`.
 
 ## Contact
 
