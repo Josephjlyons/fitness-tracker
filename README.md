@@ -23,7 +23,7 @@
 
 ## Purpose
 
-A application that allows the user to input new workouts and complete previous workouts. Once done, clicking to the dashboard the user will be able to see their workout stats from the previous seven days. Clicking on a certain workout in either the duration or workout will alter the chart and reflect changes. 
+An application that allows the user to input new workouts and complete previous workouts. Once done, clicking to the dashboard the user will be able to see their workout stats from the previous seven days. Clicking on a certain workout in either the duration or workout will alter the chart and reflect changes. 
 
 
 ## Technologies
